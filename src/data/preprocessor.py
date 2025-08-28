@@ -2,7 +2,7 @@ import re
 import string
 import pandas as pd
 import numpy as np
-from typing import List, Optional
+from typing import List, Optional, Union
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder
 import nltk
@@ -113,7 +113,8 @@ class LegalTextPreprocessor:
         
         return processed_tokens
     
-    def preprocess_text(self, text: str, join_tokens: bool = True) -> str or List[str]:
+    def preprocess_text(self, text: str, join_tokens: bool = True) -> str | List[str]:
+
         """
         Complete text preprocessing pipeline.
         
@@ -177,7 +178,7 @@ class LegalTextPreprocessor:
         return processed_df
     
     def get_label_mapping(self) -> dict:
-        """Get mapping from encoded labels to original labels."""
+        """ Get mapping from encoded labels to original labels."""
         if hasattr(self.label_encoder, 'classes_'):
             return {i: label for i, label in enumerate(self.label_encoder.classes_)}
         return {}

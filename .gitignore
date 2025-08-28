@@ -1,0 +1,44 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Raw Data (Large Files) - Don't push to GitHub
+data/raw/
+data/external/
+*.pdf
+*.zip
+*.tar.gz
+
+# Processed Data (Keep small samples only)
+data/processed/*.csv
+!data/processed/sample_*.csv  # Allow small sample files
+
+# Model Artifacts (Large files)
+models/
+*.pkl
+*.joblib
+*.h5
+*.pth
+
+# System Files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log

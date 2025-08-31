@@ -1,0 +1,53 @@
+# Code Path: requirements.txt
+
+# Core ML/DL Libraries
+torch>=2.0.0
+transformers>=4.30.0
+scikit-learn>=1.3.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# NLP Libraries
+spacy>=3.6.0
+nltk>=3.8.0
+gensim>=4.3.0
+
+# Document Processing
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+pdfplumber>=0.9.0
+pytesseract>=0.3.10
+
+# Web Framework & API
+fastapi>=0.100.0
+uvicorn>=0.22.0
+streamlit>=1.24.0
+pydantic>=2.0.0
+
+# Data Processing
+openpyxl>=3.1.0
+xlrd>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Utilities
+tqdm>=4.65.0
+joblib>=1.3.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+
+# ML Experiment Tracking
+mlflow>=2.5.0
+wandb>=0.15.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Development
+black>=23.0.0
+flake8>=6.0.0
+isort>=5.12.0

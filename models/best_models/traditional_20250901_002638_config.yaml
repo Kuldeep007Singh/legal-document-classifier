@@ -1,0 +1,12 @@
+batch_size: 16
+data_config: {}
+epochs: 5
+experiment_name: legal_classification_test
+model_config:
+  algorithm: random_forest
+  num_classes: 6
+model_save_dir: models/best_models
+model_type: traditional
+training_config:
+  epochs: 5
+  learning_rate: 2.0e-05

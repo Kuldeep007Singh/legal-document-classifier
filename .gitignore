@@ -41,3 +41,7 @@ build/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Model weights (too large for GitHub)
+models/best_models/legal_bert_doc_classifier/model.safetensors
+models/best_models/legal_bert_doc_classifier/training_args.bin

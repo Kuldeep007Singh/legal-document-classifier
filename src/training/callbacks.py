@@ -73,28 +73,5 @@ class TrainingCallbacks:
         """Check if training should be stopped"""
         return self.patience_counter >= self.patience if self.early_stopping else False
 
-if __name__ == "__main__":
-    # Example configuration
-    config = {
-        'model_type': 'traditional',  # or 'transformer'
-        'experiment_name': 'legal_classification_test',
-        'batch_size': 16,
-        'epochs': 5,
-        'data_config': {},
-        'model_config': {
-            'num_classes': 6,
-            'algorithm': 'random_forest'
-        },
-        'training_config': {
-            'learning_rate': 2e-5,
-            'epochs': 5
-        },
-        'model_save_dir': 'models/best_models'
-    }
-    
-    print("Starting trainer...")
-    trainer = ModelTrainer(config)
-    results = trainer.train()
-    print(f"Training completed! Results: {results}")
-    trainer.cleanup()
+
 

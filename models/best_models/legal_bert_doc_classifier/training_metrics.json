@@ -1,0 +1,19 @@
+{
+  "test_accuracy": 0.8503,
+  "test_f1_weighted": 0.8466,
+  "test_f1_macro": 0.8466,
+  "model_name": "nlpaueb/legal-bert-base-uncased",
+  "num_classes": 7,
+  "classes": [
+    "case_hold",
+    "ecthr_a",
+    "ecthr_b",
+    "eurlex",
+    "ledgar",
+    "scotus",
+    "unfair_tos"
+  ],
+  "max_length": 512,
+  "train_samples": 35000,
+  "dataset": "LexGLUE 7-dataset combined"
+}
